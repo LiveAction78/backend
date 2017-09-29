@@ -1,0 +1,31 @@
+{
+  "name": "live-action",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "gcloud app deploy --project live-action",
+    "dev": "node src/index.js --envfile=\".env-dev\"",
+    "prod": "node src/index.js --envfile=\".env-prod\"",
+    "start": "npm run prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/LiveAction78/backend.git",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LiveAction78/backend/issues"
+  },
+  "homepage": "https://github.com/LiveAction78/backend#readme",
+  "main": "src/index.js",
+  "author": "ypconstante <ypconstante@gmail.com>",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-route": "^3.2.0",
+    "mysql": "^2.14.1",
+    "yargs": "^8.0.2"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}
