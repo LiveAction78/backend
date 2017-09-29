@@ -1,8 +1,11 @@
+-- DROP SCHEMA db;
+
 CREATE SCHEMA db;
 
 CREATE TABLE db.lead (
   id    SERIAL PRIMARY KEY NOT NULL,
-  name  TEXT,
+  nome TEXT,
   email TEXT,
-  phone TEXT
+  empresa TEXT,
+  cargo TEXT
 );
